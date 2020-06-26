@@ -21,7 +21,7 @@ echo '<h2>'. main()."<br /> <br /> </h2>";
 
 //var_dump(test());
 
-switch(Unitest())
+switch(test())
 {
     case true:
         echo '<h2>'.'Passed Successfully!!!'.'</h2>';
@@ -33,6 +33,6 @@ switch(Unitest())
 }
 
 
-//echo test2();
+
 
 

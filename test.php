@@ -12,7 +12,7 @@
 
 
 
-  function Unitest()
+  function test()
   {
     $fp = fopen("file_test.txt", "r");
     while (!feof($fp)){
