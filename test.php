@@ -5,12 +5,7 @@
  * Date: 26/06/2020
  */
 
-
  //Here you can modify the expected values to check the exit of the program
-
-
-
-
 
   function test()
   {

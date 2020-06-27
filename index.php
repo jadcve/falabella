@@ -9,10 +9,10 @@ require_once 'test.php';
 require_once 'main.php';
  
 /* 
- *  Main function
+ *  print result
  */ 
 
-echo '<h2>'. main()."<br /> <br /> </h2>";
+print_r(main());
 
 
 /*
@@ -24,11 +24,11 @@ echo '<h2>'. main()."<br /> <br /> </h2>";
 switch(test())
 {
     case true:
-        echo '<h2>'.'Passed Successfully!!!'.'</h2>';
+        echo '<h3>'.'Passed Successfully!!!'.'</h3>';
     break;
 
     case false:
-        echo '<h2>'.'Oops something went wrong!!!'.'</h2>';
+        echo '<h3>'.'Oops something went wrong!!!'.'</h3>';
     break;
 }
 
