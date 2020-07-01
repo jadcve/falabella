@@ -4,12 +4,12 @@ namespace Falabella;
 
 class number {
 
-    protected $value1;
-    protected $value2;
-    protected $word;
+    private $value1;
+    private $value2;
+    private $word;
     
     
-    public function __construct( $value1, $value2, $word)
+    public function __construct($value1, $value2, $word)
     {
         $this->value1 = $value1; 
         $this->value2 = $value2; 
