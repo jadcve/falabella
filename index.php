@@ -1,38 +1,16 @@
 <?php
 
-/**
- * Created by Jose Alain Diaz C.
- * Date: 26/06/2020
- */
-
-require_once 'test.php';
 require_once 'main.php';
- 
-/* 
- *  print result
- */ 
-
-print_r(main());
+require_once 'show.php';
+require_once 'number.php';
+require_once 'calculate.php';
 
 
-/*
-* Testing 
-*/
+$main = new main;
+$resultado = $main->runChallenge(1,100);
 
-//var_dump(test());
-
-switch(test())
-{
-    case true:
-        echo '<h3>'.'Passed Successfully!!!'.'</h3>';
-    break;
-
-    case false:
-        echo '<h3>'.'Oops something went wrong!!!'.'</h3>';
-    break;
-}
+$message = new show;
+$message->showMessage($resultado);
 
 
-
-
-
+?>

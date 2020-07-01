@@ -1,53 +1,28 @@
 <?php
 
-/*
- * Created by Jose Alain Diaz C.
- * Date: 26/06/2020
- */
 
- function main() {
-      $result ='';
-        for ( $i=1;$i<=100;$i++) 
-        {
-            $valueToCheck = $i;
-            $valueToCheck = getDiv($valueToCheck,5,3);
-            $valueToCheck = getDiv($valueToCheck,3,3);
-            $valueToCheck = getDiv($valueToCheck,5,5);
-            $result .= $valueToCheck.",";   
-            //$result[$i] = $valueToCheck;         
-        }
-      return $result;
-} 
-
-
-function getDiv($value,$firstValue,$secondValue)
+class main
 {
-  if (is_numeric($value) && ($value % $firstValue==0) && ($value % $secondValue==0))
-  {
-     $sum = $firstValue + $secondValue;
-     
-    switch($sum)
+    public function runChallenge($inicio, $fin)
     {
-        case 8:
-            return 'Linio';
-        break;
+        $calc = new calculo;
+        $div31 = new number(3, 1, 'Falabella');
+        $div51 = new number(5, 1, 'IT');
+        $div35 = new number(5, 3, 'Linio');
 
-        case 6:
-            return 'Falabella';
-        break;
+        $returnString = "";
 
-        case 10:
-          return 'IT';
-        break;
-         
+        for ( $i=$inicio;$i<=$fin;$i++) 
+        {
+            $result = $i;
+            $result = $calc->getResult($result,$div35);
+            $result = $calc->getResult($result,$div31);
+            $result = $calc->getResult($result,$div51);
+            $returnString .= $result.",";
+        }
+        return $returnString;
     }
 
-  } 
-  return $value;
 }
 
- 
-
-
-
-
+?>
