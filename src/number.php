@@ -1,5 +1,7 @@
 <?php
 
+namespace Falabella;
+
 class number {
 
     protected $value1;

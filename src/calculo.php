@@ -1,5 +1,8 @@
 <?php
-class calculo{
+
+namespace Falabella;
+
+class calculo {
 
     public function getResult ($num,$value)
     {

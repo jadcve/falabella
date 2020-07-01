@@ -1,16 +1,15 @@
 <?php
 
+namespace Falabella;
 
-class show{
+class show {
     
     public function showMessage($message)
     {
-        echo $message; 
+        print_r($message); 
 
     }
     
 }
-
-
 
 ?>

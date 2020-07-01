@@ -1,8 +1,9 @@
 <?php
 
+namespace Falabella;
 
-class main
-{
+class main {
+
     public function runChallenge($inicio, $fin)
     {
         $calc = new calculo;
@@ -12,7 +13,7 @@ class main
 
         $returnString = "";
 
-        for ( $i=$inicio;$i<=$fin;$i++) 
+        for ($i=$inicio; $i<=$fin; $i++) 
         {
             $result = $i;
             $result = $calc->getResult($result,$div35);
@@ -20,6 +21,7 @@ class main
             $result = $calc->getResult($result,$div51);
             $returnString .= $result.",";
         }
+    
         return $returnString;
     }
 
